@@ -1,5 +1,5 @@
 rules:
-  - Wwwision\Tmp\TypedClassesMustNotBeConstructedRule
-  - Wwwision\Tmp\TypedClassesMustHavePrivateConstructorRule
-  - Wwwision\Tmp\TypedClassesMustBeFinalRule
-  - Wwwision\Tmp\TypedClassesMustBeReadonlyRule
+  - Wwwision\TypesPhpStan\TypedClassesMustNotBeConstructedRule
+  - Wwwision\TypesPhpStan\TypedClassesMustHavePrivateConstructorRule
+  - Wwwision\TypesPhpStan\TypedClassesMustBeFinalRule
+  - Wwwision\TypesPhpStan\TypedClassesMustBeReadonlyRule
