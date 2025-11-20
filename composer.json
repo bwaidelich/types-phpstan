@@ -1,0 +1,43 @@
+{
+  "name": "wwwision/types-phpstan",
+  "description": "Custom PHPStan rules for wwwision/types",
+  "type": "phpstan-extension",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Wwwision\\TypesPhpStan\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "bwaidelich",
+      "email": "b.waidelich@wwwision.de"
+    }
+  ],
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/bwaidelich"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.me/bwaidelich"
+    }
+  ],
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "rules.neon"
+      ]
+    }
+  },
+  "require": {
+    "php": ">=8.3",
+    "phpstan/phpstan": "^2",
+    "phpstan/extension-installer": "^1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "wwwision/types": "^1"
+  }
+}

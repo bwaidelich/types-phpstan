@@ -1,0 +1,5 @@
+rules:
+  - Wwwision\Tmp\TypedClassesMustNotBeConstructedRule
+  - Wwwision\Tmp\TypedClassesMustHavePrivateConstructorRule
+  - Wwwision\Tmp\TypedClassesMustBeFinalRule
+  - Wwwision\Tmp\TypedClassesMustBeReadonlyRule
