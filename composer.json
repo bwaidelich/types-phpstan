@@ -8,6 +8,11 @@
       "Wwwision\\TypesPhpStan\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Wwwision\\TypesPhpStan\\Tests\\": "tests/"
+    }
+  },
   "authors": [
     {
       "name": "bwaidelich",
@@ -38,6 +43,16 @@
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "wwwision/types": "^1"
+    "wwwision/types": "^1",
+    "phpunit/phpunit": "^12",
+    "phpstan/phpstan-phpunit": "^2"
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    }
   }
 }
