@@ -54,4 +54,9 @@ final class TypedClassesMustNotBeConstructedRuleTest extends RuleTestCase
     {
         $this->analyse([__DIR__ . '/data/InstantiationOfClassWithoutAttribute.php'], []);
     }
+
+    public function testAnonymousClassInstantiationPasses(): void
+    {
+        $this->analyse([__DIR__ . '/data/AnonymousClassInstantiation.php'], []);
+    }
 }

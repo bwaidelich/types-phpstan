@@ -7,6 +7,7 @@ namespace Wwwision\TypesPhpStan;
 use PhpParser\Node;
 use PhpParser\Node\Expr\New_;
 use PHPStan\Analyser\Scope;
+use PHPStan\Node\AnonymousClassNode;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Reflection\ReflectionProvider;
 use PHPStan\Rules\Rule;
@@ -73,6 +74,12 @@ final readonly class TypedClassesMustNotBeConstructedRule implements Rule
         // Static class names: new Foo(), new \Fully\Qualified\Bar()
         if ($node->class instanceof Node\Name) {
             return [$scope->resolveName($node->class)];
+        }
+
+        // Anonymous classes: new class { ... }
+        // Anonymous classes can't have attributes, so we skip them
+        if ($node->class instanceof AnonymousClassNode) {
+            return [];
         }
 
         // Dynamic class names: new $className(), new ($var)(), new (self::class)()
