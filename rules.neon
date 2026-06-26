@@ -3,3 +3,9 @@ rules:
   - Wwwision\TypesPhpStan\TypedClassesMustHavePrivateConstructorRule
   - Wwwision\TypesPhpStan\TypedClassesMustBeFinalRule
   - Wwwision\TypesPhpStan\TypedClassesMustBeReadonlyRule
+
+services:
+  -
+    class: Wwwision\TypesPhpStan\DynamicRecordPropertiesClassReflectionExtension
+    tags:
+      - phpstan.broker.propertiesClassReflectionExtension
