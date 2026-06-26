@@ -43,7 +43,7 @@
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "wwwision/types": "^1",
+    "wwwision/types": "^1.12",
     "phpunit/phpunit": "^12",
     "phpstan/phpstan-phpunit": "^2"
   },
